@@ -3,14 +3,19 @@ package org.example
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    println("====== Kotlin Assignment 1 =====")
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+    val maxNumber = 10
+    val sumResult = sumUpTo(maxNumber)
+    println("Sum of number from 1 to $maxNumber is: $maxNumber")
+
+    val number = 5
+    val factorialIterativeResult = factorialIterative(number)
+    println("Iterative factorial of $number is: $factorialIterativeResult")
+
+    val factorialLambdaResult = factorialLambda(number)
+    println("Lambda factorial of $number is $factorialLambdaResult")
+
+    val factorialRecursiveResult = factorialRecursive(number)
+    println("Recursive factorial $number is: $factorialRecursiveResult ")
 }
